@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap'); /*For No OF Day's*/
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrappper{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(80, 57, 109);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: whitesmoke;
+    position: relative;
+    user-select: none;
+    
+}
+.clock_border{
+    width: 600px;
+    height: 250px;
+    font-size: 55px;
+    font-family: 'Poppins', sans-serif;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+.Seconds{
+    width: 20px;
+}
+.inline{
+    display: inline-block;
+    padding-left: 20px;
+}
+.clock_border::before{
+    content: "Zyan Times";
+    position: absolute;
+    top: 59%;
+    font-size: 15px;
+}
+.Days{
+    position: absolute;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    top:39%;
+    column-gap: 20px;
+    font-family: 'Outfit', sans-serif;   
+    font-size: 13px;
+    color: rgb(20, 238, 191);
+}
+.N0_Of_Days{
+    opacity: 0.5;
+}
